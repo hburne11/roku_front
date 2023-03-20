@@ -1,5 +1,6 @@
 // import your modules/components here
 import LoginPage from "./components/TheLoginComponent.js";
+import AllUsersPage from "./components/TheAllUsersComponent.js";
 // import ErrorPage from "./modules/ErrorPage.js";
 
 
@@ -8,10 +9,16 @@ const router = VueRouter.createRouter({
     history: VueRouter.createWebHashHistory(),
     routes: [
             // vue will try to match the following routes and render the appropriate component onto the page
+        // {
+        //     path: '/', // the location bar URL
+        //     name: 'login', // the name of the route
+        //     component: LoginPage // the component to render
+        // }
+
         {
             path: '/', // the location bar URL
-            name: 'login', // the name of the route
-            component: LoginPage // the component to render
+            name: 'allUsers', // the name of the route
+            component: AllUsersPage // the component to render
         }
     ] // short for `routes: routes`
   })
